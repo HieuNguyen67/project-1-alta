@@ -1,0 +1,11 @@
+.job-card {
+  border: 1px solid #ddd;
+  padding: 16px;
+  background: white;
+  margin-bottom: 16px;
+  border-radius: 8px;
+}
+.job-image {
+  max-width: 100px;
+  border-radius: 50%;
+}
