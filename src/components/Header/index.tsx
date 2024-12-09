@@ -100,9 +100,10 @@ const Navbar: React.FC = () => {
                 <NavLink
                   to={item.key}
                   style={({ isActive }) => ({
-                    color: isActive ? "rgb(255, 90, 0)" : "black", 
+                    color: isActive ? "rgb(255, 90, 0)" : "black",
                     fontWeight: isActive ? "bold" : "bold",
                   })}
+                  onClick={toggleDrawer}
                 >
                   {item.label}
                 </NavLink>
