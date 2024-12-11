@@ -5,9 +5,15 @@ const Home:React.FC=()=>{
      
     return (
       <>
+        {" "}
+        
         <div className="block-title">
           <p
-            style={{ textAlign: "center", fontWeight: "bold" ,marginTop:"20px"}}
+            style={{
+              textAlign: "center",
+              fontWeight: "bold",
+              marginTop: "20px",
+            }}
             className="title"
           >
             {" "}
@@ -19,7 +25,7 @@ const Home:React.FC=()=>{
             <span className="title-break"> TẠI NGÔI NHÀ MỚI</span>
           </p>
         </div>
-        <JobList/>
+        <JobList />
       </>
     );
 }
