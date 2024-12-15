@@ -1,6 +1,7 @@
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 import { db } from "../../firebaseConfig";
 import { collection, getDocs } from "firebase/firestore";
+import { query, where } from "firebase/firestore";
 
 export interface Jobs {
   jobId: string;
@@ -11,6 +12,7 @@ export interface Jobs {
   workLocations: string[];
   description: string;
   jobDescriptionFile: string;
+  status: string;
 }
 
 interface JobState {
@@ -26,7 +28,8 @@ const initialState: JobState = {
 };
 
 export const fetchJobs = createAsyncThunk("jobs/fetchJobs", async () => {
-  const querySnapshot = await getDocs(collection(db, "jobs"));
+  const q = query(collection(db, "jobs"), where("status", "==", "active"));
+  const querySnapshot = await getDocs(q);
   return querySnapshot.docs.map((doc) => ({
     jobId: doc.id,
     ...doc.data(),
