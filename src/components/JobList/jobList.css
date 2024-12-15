@@ -6,6 +6,8 @@
   border-radius: 8px;
 }
 .job-image {
-  max-width: 100px;
+  width: 45px;
+  height: 45px;
+  object-fit: cover;
   border-radius: 50%;
 }
