@@ -7,7 +7,7 @@ import { Button, Col, Row, Pagination, Select, Input, Empty } from "antd";
 import { FaDownload } from "react-icons/fa";
 import { CiMail } from "react-icons/ci";
 import { FaPhone } from "react-icons/fa6";
-import notfound from "../../assets/image/not-found.png"
+import notfound from "@/assets/image/not-found.png"
 import { CiSearch } from "react-icons/ci";
 
 
@@ -76,11 +76,17 @@ const JobList: React.FC = () => {
 
   return (
     <div>
-      <Row>
+      <Row style={{ padding: "20px 10px" }}>
         {" "}
-        <Col span={7}>
-          <div style={{ border: "1px solid #d9d9d9", borderRadius: "7px" ,background:'white'}}>
-            <Row >
+        <Col xs={24} lg={7} style={{ marginTop: "10px" }}>
+          <div
+            style={{
+              border: "1px solid #d9d9d9",
+              borderRadius: "7px",
+              background: "white",
+            }}
+          >
+            <Row>
               <Col span={3}>
                 {" "}
                 <CiSearch
@@ -108,7 +114,7 @@ const JobList: React.FC = () => {
             </Row>
           </div>
         </Col>
-        <Col span={7}>
+        <Col xs={24} lg={7} style={{ marginTop: "10px" }}>
           <Select
             allowClear
             placeholder="Chọn Lĩnh Vực Chuyên Môn"
@@ -122,7 +128,7 @@ const JobList: React.FC = () => {
             ))}
           </Select>
         </Col>
-        <Col span={7}>
+        <Col xs={24} lg={7} style={{ marginTop: "10px" }}>
           <Select
             allowClear
             placeholder="Chọn Công Ty"
@@ -136,7 +142,7 @@ const JobList: React.FC = () => {
             ))}
           </Select>
         </Col>
-        <Col span={3}>
+        <Col xs={24} lg={3} style={{ marginTop: "10px" }}>
           <Button
             style={{
               width: "100%",
@@ -177,7 +183,7 @@ const JobList: React.FC = () => {
       ) : (
         <Row>
           {currentJobs.map((job) => (
-            <Col lg={8} sm={24} key={job.jobId}>
+            <Col lg={8} xs={24} key={job.jobId}>
               <div className="job-card" style={{ margin: "16px" }}>
                 <Row>
                   <Col span={4}>

@@ -44,7 +44,7 @@ const FormBusinessRegister: React.FC = () => {
   };
 
   return (
-    <div style={{ margin: "50px auto" }}>
+    <div style={{ margin: "20px auto" }}>
       <Form
         form={form}
         layout="vertical"
@@ -59,7 +59,7 @@ const FormBusinessRegister: React.FC = () => {
         }}
       >
         <Row>
-          <Col span={12}>
+          <Col lg={12} xs={24}>
             <Form.Item
               label="Email"
               name="email"
@@ -69,7 +69,7 @@ const FormBusinessRegister: React.FC = () => {
               <Input placeholder="Nhập email" />
             </Form.Item>
           </Col>
-          <Col span={12}>
+          <Col lg={12} xs={24}>
             <Form.Item
               label="Địa chỉ công ty"
               name="address"
@@ -82,7 +82,7 @@ const FormBusinessRegister: React.FC = () => {
         </Row>
 
         <Row>
-          <Col span={12}>
+          <Col lg={12} xs={24}>
             <Form.Item
               label="Tên doanh nghiệp"
               name="companyName"
@@ -92,7 +92,7 @@ const FormBusinessRegister: React.FC = () => {
               <Input placeholder="Nhập Tên doanh nghiệp" />
             </Form.Item>
           </Col>
-          <Col span={12}>
+          <Col lg={12} xs={24}>
             <Form.Item
               label="Người quản lý"
               name="managerName"
@@ -105,7 +105,7 @@ const FormBusinessRegister: React.FC = () => {
         </Row>
 
         <Row>
-          <Col span={12}>
+          <Col lg={12} xs={24}>
             <Form.Item
               label="Điện thoại công ty"
               name="companyPhone"
@@ -117,7 +117,7 @@ const FormBusinessRegister: React.FC = () => {
               <Input placeholder="Nhập Điện thoại công ty" />
             </Form.Item>
           </Col>
-          <Col span={12}>
+          <Col lg={12} xs={24}>
             <Form.Item
               label="Điện thoại người quản lý"
               name="managerPhone"

@@ -1,5 +1,5 @@
 
-import JobList from "../../components/JobList";
+import JobList from "@/components/JobList";
 import "./home.css"
 const Home:React.FC=()=>{
      

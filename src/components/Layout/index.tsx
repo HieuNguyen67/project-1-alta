@@ -1,7 +1,7 @@
 import { Col, Row } from "antd";
 import Navbar from "../Header";
 import Footer from "../Footer";
-import "./layout.css"
+
 interface MainLayoutProps {
   children: React.ReactNode;
 }

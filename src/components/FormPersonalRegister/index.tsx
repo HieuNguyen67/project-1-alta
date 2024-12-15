@@ -110,7 +110,7 @@ const JobApplicationForm: React.FC = () => {
     <form
       onSubmit={handleSubmit}
       className="space-y-4"
-      style={{ marginTop: "20px" }}
+      style={{ margin: "20px 20px" }}
     >
       <div style={{ margin: "10px 5px" }}>
         <label style={{ marginBottom: "10px" }}>Chọn file: </label>
@@ -131,12 +131,13 @@ const JobApplicationForm: React.FC = () => {
       {fileName && (
         <div style={{ marginTop: "10px" }}>
           <strong>Đã chọn file: </strong>
-         <FaFile style={{ fontSize: "25px", color: "rgb(255, 90, 0)"}}/> {fileName}
+          <FaFile style={{ fontSize: "25px", color: "rgb(255, 90, 0)" }} />{" "}
+          {fileName}
         </div>
       )}
 
       <Row>
-        <Col span={12}>
+        <Col lg={12} xs={24}>
           <div style={{ margin: "10px 5px" }}>
             <label>Họ và tên:</label>
             <Input
@@ -149,7 +150,7 @@ const JobApplicationForm: React.FC = () => {
             />
           </div>
         </Col>
-        <Col span={12}>
+        <Col lg={12} xs={24}>
           {" "}
           <div style={{ margin: "10px 5px" }}>
             <label>Trường đang học:</label>
@@ -165,7 +166,7 @@ const JobApplicationForm: React.FC = () => {
         </Col>
       </Row>
       <Row>
-        <Col span={12}>
+        <Col lg={12} xs={24}>
           {" "}
           <div style={{ margin: "10px 5px" }}>
             <label>Ngày sinh:</label>
@@ -185,7 +186,7 @@ const JobApplicationForm: React.FC = () => {
             />
           </div>
         </Col>
-        <Col span={12}>
+        <Col lg={12} xs={24}>
           <div style={{ margin: "10px 5px" }}>
             <label>Chuyên ngành:</label>
             <Input
@@ -200,7 +201,7 @@ const JobApplicationForm: React.FC = () => {
         </Col>
       </Row>
       <Row>
-        <Col span={12}>
+        <Col lg={12} xs={24}>
           <div style={{ margin: "10px 5px" }}>
             <label>Chọn vị trí ứng tuyển:</label>
             <Select
@@ -219,7 +220,7 @@ const JobApplicationForm: React.FC = () => {
             </Select>
           </div>
         </Col>
-        <Col span={12}>
+        <Col lg={12} xs={24}>
           {" "}
           <div style={{ margin: "10px 5px" }}>
             <label>Hình thức đăng ký:</label>
@@ -237,7 +238,7 @@ const JobApplicationForm: React.FC = () => {
         </Col>
       </Row>
       <Row>
-        <Col span={12}>
+        <Col lg={12} xs={24}>
           {" "}
           <div style={{ margin: "10px 5px" }}>
             <label>Địa chỉ email:</label>
@@ -251,7 +252,7 @@ const JobApplicationForm: React.FC = () => {
             />
           </div>
         </Col>
-        <Col span={12}>
+        <Col lg={12} xs={24}>
           <div style={{ margin: "10px 5px" }}>
             <label>Hình thức thực hiện:</label>
             <Select
@@ -268,7 +269,7 @@ const JobApplicationForm: React.FC = () => {
         </Col>
       </Row>
       <Row>
-        <Col span={12}>
+        <Col lg={12} xs={24}>
           {" "}
           <div style={{ margin: "10px 5px" }}>
             <label>Điện thoại:</label>
@@ -282,7 +283,7 @@ const JobApplicationForm: React.FC = () => {
             />
           </div>
         </Col>
-        <Col span={12}>
+        <Col lg={12} xs={24}>
           {" "}
           <div style={{ margin: "10px 5px" }}>
             <label>Biết trang tuyển dụng từ đâu:</label>
